@@ -1,0 +1,153 @@
+/* Common styles for all devices */
+.about-section,
+.project-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-content,
+.project-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2,
+.project-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content li,
+.project-box li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.about-content li::before,
+.project-box li::before {
+    content: "\2022";
+    color: #e74c3c;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.about-content p,
+.project-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777;
+}
+
+/* Responsive styles for different devices */
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+
+    .about-section,
+    .project-section {
+        padding: 40px 0;
+    }
+
+    .about-content h2,
+    .project-box h2 {
+        font-size: 24px;
+    }
+
+    .about-content li,
+    .project-box li {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .about-content li::before,
+    .project-box li::before {
+        font-size: 20px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+
+    .about-section,
+    .project-section {
+        padding: 60px 0;
+    }
+}
+
+/* Larger Desktop Screens */
+@media (min-width: 1200px) {
+
+    .about-section,
+    .project-section {
+        padding: 100px 0;
+    }
+}
+
+
+/* Why Us section */
+.why-us-section {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.why-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.why-us-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.why-us-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-us-content li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.why-us-content li::before {
+    content: "\2022";
+    color: #e74c3c;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+@media (max-width: 768px) {
+    .why-us-section {
+        padding: 40px 0;
+    }
+
+    .why-us-content h2 {
+        font-size: 24px;
+    }
+
+    .why-us-content li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .why-us-content li::before {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,267 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a {
+    font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Hero section styles */
+.hero {
+    background-image: url('../../../public//blue-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Top Categories section styles */
+.top-categories {
+    padding: 40px 0;
+    background-color:aliceblue;
+    text-align: center;
+}
+
+.top-categories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.category-item {
+    flex: 0 0 calc(25% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.category-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-size: 1.1rem;
+}
+
+/* Features section styles */
+.section-feature {
+    padding: 40px 0;
+    text-align: center;
+    background: rgb(11, 0, 36);
+    background: linear-gradient(90deg, rgba(11, 0, 36, 1) 0%, rgba(192, 62, 189, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    background-size: 200% 200%;
+    animation: gradientChange 10s linear infinite;
+}
+
+.section-feature h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.list li p {
+    color: white !important;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 25%;
+    }
+
+    25% {
+        background-position: 25% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    75% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+
+}
+
+/* to animate boxes */
+@keyframes boxAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) translateY(-100px);
+    }
+    25% {
+        opacity: 0;
+        transform: translateX(-75px) translateY(-75px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(-50px) translateY(-50px);
+    }
+    75% {
+        opacity: 0;
+        transform: translateX(-25px) translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+/* Updated section-feature styles with animation */
+.top-categories {
+    /* ... Other styles ... */
+    opacity: 0;
+}
+
+.top-categories.animate {
+    opacity: 1;
+}
+
+.top-categories.animate .category-item {
+    animation: boxAnimation 1s ease-out;
+}
+
+.top-categories.animate .category-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.top-categories.animate .category-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.top-categories.animate .category-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* Responsive styles for different devices */
+
+/* For tablets and larger devices */
+@media (min-width: 768px) {
+    .hero {
+      height: 800px;
+    }
+  
+    .hero h1 {
+      font-size: 4rem;
+    }
+  
+    .hero p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* For laptops and larger devices */
+  @media (min-width: 992px) {
+    .hero {
+      height: 1000px;
+    }
+  
+    .hero h1 {
+      font-size: 5rem;
+    }
+  
+    .hero p {
+      font-size: 1.8rem;
+    }
+  
+    .category-item {
+      flex: 0 0 calc(20% - 20px);
+    }
+  }
+  
+  /* For desktops and larger devices */
+  @media (min-width: 1200px) {
+    .hero {
+      height: 1200px;
+    }
+  
+    .hero h1 {
+      font-size: 6rem;
+    }
+  
+    .hero p {
+      font-size: 2rem;
+    }
+  }

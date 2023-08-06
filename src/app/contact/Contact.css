@@ -1,0 +1,249 @@
+.container {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.text {
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .container {
+        justify-content: flex-start;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+}
+
+/* contact section */
+.contact-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+/* For mobiles and smaller devices */
+@media (max-width: 767px) {
+    .contact-section {
+        font-size: 14px;
+    }
+
+    .contact-section h2 {
+        font-size: 20px;
+    }
+}
+
+/* For tablets and larger devices */
+@media (min-width: 768px) {
+    .contact-section {
+        font-size: 18px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+    }
+}
+
+/* For laptops and larger devices */
+@media (min-width: 992px) {
+    .contact-section {
+        font-size: 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
+    }
+}
+
+/* For desktops and larger devices */
+@media (min-width: 1200px) {
+    .contact-section {
+        font-size: 22px;
+    }
+
+    .contact-section h2 {
+        font-size: 32px;
+    }
+}
+
+/* CSS for the facility services section */
+
+.facility-services {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.facility-services h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.facility-services ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.facility-services li {
+    margin-bottom: 5px;
+}
+
+/* For mobiles and smaller devices */
+@media (max-width: 767px) {
+    .facility-services {
+        font-size: 14px;
+    }
+
+    .facility-services h2 {
+        font-size: 20px;
+    }
+}
+
+/* For tablets and larger devices */
+@media (min-width: 768px) {
+    .facility-services {
+        font-size: 18px;
+    }
+
+    .facility-services h2 {
+        font-size: 24px;
+    }
+}
+
+/* For laptops and larger devices */
+@media (min-width: 992px) {
+    .facility-services {
+        font-size: 20px;
+    }
+
+    .facility-services h2 {
+        font-size: 28px;
+    }
+}
+
+/* For desktops and larger devices */
+@media (min-width: 1200px) {
+    .facility-services {
+        font-size: 22px;
+    }
+
+    .facility-services h2 {
+        font-size: 32px;
+    }
+}
+
+/* address section */
+
+.address-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
+
+.contact-email,
+.working-hours {
+    flex-basis: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        flex: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .contact-email,
+    .working-hours {
+        text-align: center;
+    }
+}
+
+/* form styling */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1ps solid transparent;
+    resize: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    input,
+    textarea,
+    button {
+        padding: 10px;
+    }
+}
